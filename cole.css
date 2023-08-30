@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(123, 118, 114);
+    letter-spacing: .2rem;
+    /* overflow-y: hidden; */
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    font-size: 1.6rem;
+    background: rgb(27, 28, 29);
+}
+
+nav{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(132, 132, 255, 0.25) 0px 50px 100px -20px, rgba(80, 97, 137, 0.638) 0px 30px 60px -30px;
+}
+
+.resp{
+    background: saddlebrown;
+    width: 50px;
+    height: 40px;
+    display: none;
+}
+
+.bar{
+    width: 40px;
+    height: 5px;
+    margin: 0.5rem;
+    border-radius: 10px;
+    background-color: white;
+}
+.logo h2 span{
+    color: saddlebrown;
+    font-size: 1.5rem;
+}
+
+.nav_links ul{
+    display: flex;
+}
+
+.nav_links ul li a{
+    margin: 1rem;
+    font-size: 1.6rem;
+    transition: 1s ease;
+}
+
+.nav_links ul li:hover a{
+    border-bottom: 2px solid saddlebrown;
+    padding-bottom: 2rem;
+    border-radius: 1px;
+}
+
+/* Main sections */
+
+section{
+    width: 100%;
+    height: 60vh;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont{
+    width: 50vw;
+}
+
+.cont p{
+    margin: 2rem 0;
+    font-size: 1.7rem;
+    letter-spacing: .2rem;
+}
+
+.cont h2{
+    font-size: 4.5rem;
+}
+
+.cont button{
+    background: saddlebrown;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    width: 200px;
+    border-radius: 30px;
+    transition: 2s ease;
+}
+
+.cont button:hover{
+    background: transparent;
+    border: 2px solid saddlebrown;
+}
+
+.cont button a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: calc(100% - 20%);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* margin: 0 auto
+    ; */
+}
+
+.head{
+    text-align: center;
+    margin: 4rem;
+}
+
+.head h2{
+    font-size: 3rem;
+}
+
+.box{
+    width: 31%;
+    background: rgb(50, 50,s 50);
+    padding: 4rem;
+    border: 1px solid rgb(123, 118, 114);
+    transition: 1s ease;
+}
+
+.box:hover{
+    background: saddlebrown;
+    color: white;
+    border: none;
+}
+
+.box h2{
+    margin: 2rem 0;
+}
+
+.box p{
+    font-size: 1.4rem;
+}
+
+/* syntax for media query */
+@media screen and (min-width: 150px) and (max-width: 500px) {
+    nav{
+        justify-content: space-around;
+    }
+
+    .resp{
+        display: block;
+    }
+
+    .nav_links{
+        display: none;
+    }
+
+    .nav_links ul{
+        flex-direction: column;
+    }
+
+    .nav_links ul li{
+        margin: 2rem;
+    }
+
+    .logo{
+        width: 100%;
+    }
+    .logo h2{
+        font-size: 2.6rem;
+    }
+
+    .content{
+        width: calc(100% - 5%);
+    }
+    
+    .box{
+        width: 100%;
+    }
+
+    .cont{
+        width: calc(100% - 10%);
+    }
+
+    .cont h2{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .cont p{
+        font-size: 1.4rem;
+    }
+
+    .cont button{
+        width: 150px;
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1040px) {
+    .content{
+        width: calc(100% - 5%);
+    }
+    
+    .box{
+        width: 49%;
+    }
+
+    .cont{
+        width: calc(100% - 10%);
+    }
+
+    .cont h2{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .cont p{
+        font-size: 1.4rem;
+    }
+
+    .cont button{
+        width: 150px;
+        padding: 1.2rem;
+    }
+}
